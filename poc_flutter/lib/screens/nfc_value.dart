@@ -22,14 +22,14 @@ class NfcValueScreen extends StatelessWidget {
           ),
           child: Column(children: [
             Text(
-              "Credit Card Details",
+              "NFC Details",
               style: Theme.of(context)
                   .textTheme
                   .titleLarge!
                   .copyWith(color: Colors.white),
             ),
-            SizedBox(height: 8),
-            Text(value)
+            SizedBox(height: 12),
+            Text(value, softWrap: true, maxLines: 8, overflow: TextOverflow.ellipsis,) 
           ]),
         ),
       ),
