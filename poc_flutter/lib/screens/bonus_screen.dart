@@ -12,7 +12,7 @@ class _BonusScreenState extends State<BonusScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bonus Screen"),
+        title: const Text("Bonus Screen"),
       ),
     );
   }

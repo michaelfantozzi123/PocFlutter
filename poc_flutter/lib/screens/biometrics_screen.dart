@@ -12,7 +12,7 @@ class _BiometricsScreenState extends State<BiometricsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Biometrics Screen"),
+        title: const Text("Biometrics Screen"),
       ),
     );
   }

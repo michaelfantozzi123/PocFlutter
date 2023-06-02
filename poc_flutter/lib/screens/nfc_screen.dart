@@ -12,7 +12,7 @@ class _NFCScreenState extends State<NFCScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("NFC Screen"),
+        title: const Text("NFC Screen"),
       ),
     );
   }

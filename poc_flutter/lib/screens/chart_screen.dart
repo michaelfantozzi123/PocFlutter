@@ -12,7 +12,7 @@ class _ChartScreenState extends State<ChartScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Chart Screen"),
+        title: const Text("Chart Screen"),
       ),
     );
   }
