@@ -20,8 +20,31 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Image.network(
           'https://www.kerridgecs.co.za/files/ocw/kcs_logo_211_x_95_white_bg.png',
-          width: 100,
+          width: 80,
         ),
+      ),
+      drawer: Drawer(
+        child: Column(children: [
+          DrawerHeader(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.network(
+                  'https://www.kerridgecs.co.za/files/ocw/kcs_logo_211_x_95_white_bg.png',
+                  width: 150,
+                ),
+              ],
+            ),
+          ),
+          ListTile(
+            onTap: () {},
+            title: Text("Home Page"),
+          ),
+          ListTile(
+            onTap: () {},
+            title: Text("About Me Page"),
+          ),
+        ]),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
