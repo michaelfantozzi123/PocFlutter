@@ -16,6 +16,7 @@ class HomeCard extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       splashColor: Theme.of(context).primaryColor,
+      borderRadius: BorderRadius.circular(15),
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(

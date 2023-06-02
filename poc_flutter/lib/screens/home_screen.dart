@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:poc_flutter/screens/biometrics_screen.dart';
+import 'package:poc_flutter/screens/bonus_screen.dart';
 import 'package:poc_flutter/screens/chart_screen.dart';
 import 'package:poc_flutter/screens/nfc_screen.dart';
 import 'package:poc_flutter/screens/qr_screen.dart';
@@ -68,6 +69,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: ((context) => const QRScreen())));
+                    }),
+                HomeCard(
+                    title: 'Bonus Stuff',
+                    icon: Icons.star,
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: ((context) => const BonusScreen())));
                     }),
               ],
             ),
