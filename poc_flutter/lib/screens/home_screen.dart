@@ -5,6 +5,7 @@ import 'package:poc_flutter/screens/chart_screen.dart';
 import 'package:poc_flutter/screens/nfc_screen.dart';
 import 'package:poc_flutter/screens/qr_screen.dart';
 import 'package:poc_flutter/widgets/home_card._widget.dart';
+import 'package:poc_flutter/widgets/main_drawer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -23,29 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
           width: 80,
         ),
       ),
-      drawer: Drawer(
-        child: Column(children: [
-          DrawerHeader(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.network(
-                  'https://www.kerridgecs.co.za/files/ocw/kcs_logo_211_x_95_white_bg.png',
-                  width: 150,
-                ),
-              ],
-            ),
-          ),
-          ListTile(
-            onTap: () {},
-            title: Text("Home Page"),
-          ),
-          ListTile(
-            onTap: () {},
-            title: Text("About Me Page"),
-          ),
-        ]),
-      ),
+      drawer: const MainDrawer(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
