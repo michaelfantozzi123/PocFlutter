@@ -24,13 +24,17 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            "Proof of concept",
-            style: Theme.of(context)
-                .textTheme
-                .titleLarge!
-                .copyWith(fontWeight: FontWeight.w500),
+          Padding(
+            padding: const EdgeInsets.only(left: 16),
+            child: Text(
+              "Proof of concept",
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge!
+                  .copyWith(fontWeight: FontWeight.w500),
+            ),
           ),
           const SizedBox(height: 8),
           Expanded(

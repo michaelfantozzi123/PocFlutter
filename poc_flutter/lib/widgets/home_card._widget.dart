@@ -23,7 +23,10 @@ class HomeCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
             color: Colors.grey.shade300),
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Icon(icon),
+          Icon(
+            icon,
+            color: Theme.of(context).primaryColor,
+          ),
           const SizedBox(height: 8),
           Text(title),
         ]),
